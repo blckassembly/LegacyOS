@@ -1,0 +1,11 @@
+{
+  "name": "LegacyOS",
+  "description": "Enterprise-grade modernization platform for legacy core systems. Featuring AI-powered orchestration, Knowledge Graph dependency mapping, evidence-based RAG, and veteran knowledge capture.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

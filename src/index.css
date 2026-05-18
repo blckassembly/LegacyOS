@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-atelier-white: #ffffff;
+  --color-atelier-black: #000000;
+  --color-atelier-gray: #f5f5f5;
+  --color-atelier-border: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black font-sans antialiased;
+  }
+}
+
+@layer components {
+  .atelier-border {
+    border: 1px solid #000;
+    border-radius: 2px;
+  }
+  
+  .atelier-card {
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+  
+  .atelier-btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .atelier-btn-primary:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .atelier-btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .atelier-btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .micro-label {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Custom transitions */
+.transition-luxury {
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
